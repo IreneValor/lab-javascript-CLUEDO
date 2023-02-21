@@ -170,8 +170,8 @@
             return undefined
         }
 
-        const randomNumnber = (Math.floor(Math.random() * Array.length))
-        return Array[randomNumnber]
+        const randomNumber = (Math.floor(Math.random() * Array.length))
+        return Array[randomNumber]
     }
 
 
@@ -185,18 +185,15 @@
             
         };
         return objectRandom
-
     }
 
 
     // ITERATION 3
 
-    function revealMystery(mistery) {
+    function revealMystery(envelope) {
 
-        const a =`"¡${mistery.suspect.firstName} ${mistery.suspect.lastName} killed Mr. Boddy using the ${mistery.weapon.name} in the ${mistery.room.name}!"`
-        
+        const a =`${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in the ${envelope.room.name}!`
         return a
-        // "<FIRST NAME> <LAST NAME> killed Mr. Boddy using the <WEAPON> in the <PLACE>!"
-       
+
     }
 
